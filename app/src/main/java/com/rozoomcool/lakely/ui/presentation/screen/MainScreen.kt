@@ -33,10 +33,7 @@ fun MainScreen(viewModel: AppViewModel = hiltViewModel()) {
                 Text("$page")
                 Spacer(modifier = Modifier.height(36.dp))
             }
-            1 -> Box(modifier = Modifier.fillMaxSize().background(Color.Cyan)) {
-                Text("$page")
-                Spacer(modifier = Modifier.height(36.dp))
-            }
+            1 -> HomePage()
             2 -> AppPage()
         }
     }
