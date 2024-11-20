@@ -49,7 +49,7 @@ fun AppLauncher(apps: List<AppInfo>, onAppClick: (String) -> Unit) {
                     modifier = Modifier.size(48.dp)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
-                Text(apps[i].label, fontSize = 16.sp)
+                Text(apps[i].packageName, fontSize = 16.sp)
             }
         }
     }
