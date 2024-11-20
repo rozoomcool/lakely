@@ -52,7 +52,6 @@ import kotlinx.coroutines.launch
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomePage() {
-    val scope = rememberCoroutineScope()
     val context = LocalContext.current
     Scaffold(
         topBar = {

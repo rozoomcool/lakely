@@ -29,10 +29,7 @@ fun MainScreen(viewModel: AppViewModel = hiltViewModel()) {
 
     HorizontalPager(state = pageState, pageSize = PageSize.Fill, ) { page ->
         when (page) {
-            0 -> Box(modifier = Modifier.fillMaxSize().background(Color.Red)) {
-                Text("$page")
-                Spacer(modifier = Modifier.height(36.dp))
-            }
+            0 -> WorkPage()
             1 -> HomePage()
             2 -> AppPage()
         }
